@@ -75,7 +75,7 @@ namespace SlotMachine
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)
         {
             if (credits >= bet)
             {
@@ -116,6 +116,36 @@ namespace SlotMachine
                 if (pictureBox5.Image != null) pictureBox5.Image.Dispose();
                 pictureBox5.Image = Image.FromFile(p5.ToString() + ".jpg");
 
+                if (pictureBox6.Image != null) pictureBox6.Image.Dispose();
+                pictureBox6.Image = Image.FromFile(p6.ToString() + ".jpg");
+
+                if (pictureBox7.Image != null) pictureBox7.Image.Dispose();
+                pictureBox7.Image = Image.FromFile(p7.ToString() + ".jpg");
+
+                if (pictureBox8.Image != null) pictureBox8.Image.Dispose();
+                pictureBox8.Image = Image.FromFile(p8.ToString() + ".jpg");
+
+                if (pictureBox9.Image != null) pictureBox9.Image.Dispose();
+                pictureBox9.Image = Image.FromFile(p9.ToString() + ".jpg");
+
+                if (pictureBox10.Image != null) pictureBox10.Image.Dispose();
+                pictureBox10.Image = Image.FromFile(p10.ToString() + ".jpg");
+
+                if (pictureBox11.Image != null) pictureBox11.Image.Dispose();
+                pictureBox11.Image = Image.FromFile(p11.ToString() + ".jpg");
+
+                if (pictureBox12.Image != null) pictureBox12.Image.Dispose();
+                pictureBox12.Image = Image.FromFile(p12.ToString() + ".jpg");
+
+                if (pictureBox13.Image != null) pictureBox13.Image.Dispose();
+                pictureBox13.Image = Image.FromFile(p13.ToString() + ".jpg");
+
+                if (pictureBox14.Image != null) pictureBox14.Image.Dispose();
+                pictureBox14.Image = Image.FromFile(p14.ToString() + ".jpg");
+
+                if (pictureBox15.Image != null) pictureBox15.Image.Dispose();
+                pictureBox15.Image = Image.FromFile(p15.ToString() + ".jpg");
+
                 total = 0;
 
                 // GET RESULTS FROM PAYTABLE
@@ -155,11 +185,11 @@ namespace SlotMachine
                 if (p1 == 3 & p2 == 3 & p3 == 3 & p4 == 3 & p5 == 3) total = total + 30;
                 if (p1 == 4 & p2 == 4 & p3 == 4 & p4 == 4 & p5 == 4) total = total + 40;
                 if (p1 == 5 & p2 == 5 & p3 == 5 & p4 == 5 & p5 == 5) total = total + 50;
-                if (p10== 1 & p9 == 1 & p8 == 1 & p7 == 1 & p6 == 1) total = total + 20;
-                if (p10== 2 & p9 == 2 & p8 == 2 & p7 == 2 & p6 == 2) total = total + 25;
-                if (p10== 3 & p9 == 3 & p8 == 3 & p7 == 3 & p6 == 3) total = total + 30;
-                if (p10== 4 & p9 == 4 & p8 == 4 & p7 == 4 & p6 == 4) total = total + 40;
-                if (p10== 5 & p9 == 5 & p8 == 5 & p7 == 5 & p6 == 5) total = total + 50;
+                if (p10 == 1 & p9 == 1 & p8 == 1 & p7 == 1 & p6 == 1) total = total + 20;
+                if (p10 == 2 & p9 == 2 & p8 == 2 & p7 == 2 & p6 == 2) total = total + 25;
+                if (p10 == 3 & p9 == 3 & p8 == 3 & p7 == 3 & p6 == 3) total = total + 30;
+                if (p10 == 4 & p9 == 4 & p8 == 4 & p7 == 4 & p6 == 4) total = total + 40;
+                if (p10 == 5 & p9 == 5 & p8 == 5 & p7 == 5 & p6 == 5) total = total + 50;
                 if (p15 == 1 & p14 == 1 & p13 == 1 & p12 == 1 & p11 == 1) total = total + 20;
                 if (p15 == 2 & p14 == 2 & p13 == 2 & p12 == 2 & p11 == 2) total = total + 25;
                 if (p15 == 3 & p14 == 3 & p13 == 3 & p12 == 3 & p11 == 3) total = total + 30;
@@ -170,6 +200,6 @@ namespace SlotMachine
                 label3.Text = "Win: " + total.ToString();
                 label1.Text = "Credits: " + credits.ToString();
             }
-        }        
+        }
     }
 }

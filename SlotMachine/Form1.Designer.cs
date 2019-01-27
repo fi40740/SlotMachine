@@ -222,7 +222,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 23);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Bet: 5";
+            this.label2.Text = "Bet: 3";
             // 
             // label3
             // 
@@ -248,6 +248,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Spin";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // label4
             // 
