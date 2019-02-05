@@ -82,7 +82,7 @@ namespace SlotMachine
                 credits = credits - bet;
                 label1.Text = "Credits: " + credits.ToString();
 
-                for (var i = 0; i < 10; i++)
+                for (int i = 0; i < 6; i++)
                 {
                     p1 = IntUtil.Random(1, 6);
                     p2 = IntUtil.Random(1, 6);
