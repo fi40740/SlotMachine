@@ -17,12 +17,10 @@ namespace SlotMachine
             InitializeComponent();
         }
 
-        // DECLARING TOTAL, BET, CREDITS
         public static long credits = 100;
         public static long total = 0;
         public static int bet = 3;
 
-        // DECLARING EACH ITEM
         public static int p1;
         public static int p2;
         public static int p3;
@@ -38,7 +36,6 @@ namespace SlotMachine
         public static int p13;
         public static int p14;
         public static int p15;
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -59,7 +56,6 @@ namespace SlotMachine
             pictureBox15.Image = Image.FromFile("1.jpg");
         }
 
-        // GENERATES RANDOM NUMBERS
         public static class IntUtil
         {
             private static Random random;
@@ -148,8 +144,7 @@ namespace SlotMachine
 
                 total = 0;
 
-                // GET RESULTS FROM PAYTABLE
-                // CHECK IF 1, 2, 3, 4 OR 5 OCCURANCES
+                // PAYTABLE
                 if (p1 == 1 & p2 == 1 & p3 == 1) total = total + 1;
                 if (p1 == 2 & p2 == 2 & p3 == 2) total = total + 2;
                 if (p1 == 3 & p2 == 3 & p3 == 3) total = total + 3;
